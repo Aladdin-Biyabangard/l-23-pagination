@@ -1,5 +1,6 @@
 package az.ingress.service.implementation;
 
+import az.ingress.config.annotation.LogClass;
 import az.ingress.dao.enitty.PaymentEntity;
 import az.ingress.dao.enitty.PaymentEntity.Fields;
 import az.ingress.dao.repository.PaymentRepository;
@@ -22,6 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static az.ingress.model.enums.ExceptionConstants.PAYMENT_NOT_FOUND;
 
 @Service
+@LogClass
 @RequiredArgsConstructor
 public class PaymentServiceImpl implements PaymentService {
 
